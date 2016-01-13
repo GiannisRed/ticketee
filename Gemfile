@@ -34,8 +34,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Basically, newer versions of rspec are broken on Windows. Don't use them. Do this and rspec works just fine.
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.2.1'
+  gem 'rspec-rails', '2.14.1'
 end
 
 group :development do
